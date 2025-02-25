@@ -797,6 +797,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7311747219355624700, guid: f737bd80d1eddd84cbd3ffce591e40c5, type: 3}
   m_PrefabInstance: {fileID: 647646123}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &455329807
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 952262540157347226, guid: 0b93b96c03ba09f4193afbd409a6119e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 952262540157347226, guid: 0b93b96c03ba09f4193afbd409a6119e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 952262540157347226, guid: 0b93b96c03ba09f4193afbd409a6119e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 952262540157347226, guid: 0b93b96c03ba09f4193afbd409a6119e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 952262540157347226, guid: 0b93b96c03ba09f4193afbd409a6119e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 952262540157347226, guid: 0b93b96c03ba09f4193afbd409a6119e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 952262540157347226, guid: 0b93b96c03ba09f4193afbd409a6119e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 952262540157347226, guid: 0b93b96c03ba09f4193afbd409a6119e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 952262540157347226, guid: 0b93b96c03ba09f4193afbd409a6119e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 952262540157347226, guid: 0b93b96c03ba09f4193afbd409a6119e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5314312151165901655, guid: 0b93b96c03ba09f4193afbd409a6119e, type: 3}
+      propertyPath: m_Name
+      value: CollectCoinsQuestStep
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b93b96c03ba09f4193afbd409a6119e, type: 3}
 --- !u!1 &475498927
 GameObject:
   m_ObjectHideFlags: 0
@@ -63860,3 +63917,4 @@ SceneRoots:
   - {fileID: 2018848256}
   - {fileID: 1794424689}
   - {fileID: 1457025233}
+  - {fileID: 455329807}

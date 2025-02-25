@@ -17,6 +17,9 @@ public class EventManager : MonoBehaviour {
     public CoinEvents coinEvents { get; private set; }
     public EXPEvents expEvents { get; private set; }
 
+    //Misc
+    public MiscEvents miscEvents { get; private set; }
+
     private void Awake() {
         if (Instance == null) {
             Instance = this;
@@ -33,6 +36,7 @@ public class EventManager : MonoBehaviour {
         gameUIEvents = new GameUIEvents();
         coinEvents = new CoinEvents();
         expEvents = new EXPEvents();
+        miscEvents = new MiscEvents();
     }
 
     private void UnsubscribeEvents() {
@@ -41,6 +45,7 @@ public class EventManager : MonoBehaviour {
         gameUIEvents?.ClearEventSubs();
         coinEvents?.ClearEventSubs();
         expEvents?.ClearEventSubs();
+        miscEvents?.ClearEventSubs();
     }
 
     private void OnDestroy() {

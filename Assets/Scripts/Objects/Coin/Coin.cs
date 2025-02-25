@@ -20,6 +20,7 @@ public class Coin : MonoBehaviour {
     private void CollectCoin() {
         if (EventManager.Instance != null) {
             EventManager.Instance.coinEvents.CoinGained(coinValue);
+            EventManager.Instance.miscEvents.CoinCollected();
             circleCollider2D.enabled = false;
             Destroy(gameObject);
         } else {
