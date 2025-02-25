@@ -25,7 +25,7 @@ The primary goal of this project is to experiment with various approaches to dia
 1.  Clone the repository:
 
     ```bash
-    git clone <repository_url>
+    git clone <https://github.com/Ellisia-Chan/Tiny_RPG>
     ```
 
 2.  Open the project in Unity Editor.
