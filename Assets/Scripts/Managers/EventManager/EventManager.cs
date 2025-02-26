@@ -16,6 +16,7 @@ public class EventManager : MonoBehaviour {
     // Other Events
     public CoinEvents coinEvents { get; private set; }
     public EXPEvents expEvents { get; private set; }
+    public QuestEvents questEvents { get; private set; }
 
     //Misc
     public MiscEvents miscEvents { get; private set; }
@@ -36,6 +37,7 @@ public class EventManager : MonoBehaviour {
         gameUIEvents = new GameUIEvents();
         coinEvents = new CoinEvents();
         expEvents = new EXPEvents();
+        questEvents = new QuestEvents();
         miscEvents = new MiscEvents();
     }
 
@@ -45,6 +47,7 @@ public class EventManager : MonoBehaviour {
         gameUIEvents?.ClearEventSubs();
         coinEvents?.ClearEventSubs();
         expEvents?.ClearEventSubs();
+        questEvents?.ClearEventSubs();
         miscEvents?.ClearEventSubs();
     }
 

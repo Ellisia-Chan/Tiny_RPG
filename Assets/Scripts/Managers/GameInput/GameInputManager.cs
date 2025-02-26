@@ -22,6 +22,7 @@ public class GameInputManager : MonoBehaviour {
 
         playerInputActions.Player.Run.performed += RunAction;
         playerInputActions.Player.Run.canceled += RunActionCancel;
+        playerInputActions.Player.Submit.performed += SubmitAction;
     }
 
     private void OnDisable() {
@@ -29,6 +30,7 @@ public class GameInputManager : MonoBehaviour {
 
         playerInputActions.Player.Run.performed -= RunAction;
         playerInputActions.Player.Run.canceled -= RunActionCancel;
+        playerInputActions.Player.Submit.performed -= SubmitAction;
     }
 
     private void RunAction(InputAction.CallbackContext obj) {
@@ -37,6 +39,10 @@ public class GameInputManager : MonoBehaviour {
 
     private void RunActionCancel(InputAction.CallbackContext obj) {
         EventManager.Instance.inputEvents.RunActionCancel();
+    }
+
+    private void SubmitAction(InputAction.CallbackContext obj) {
+        EventManager.Instance.inputEvents.SubmitAction();
     }
 
     public Vector2 GetMovementVectorNormalized() {

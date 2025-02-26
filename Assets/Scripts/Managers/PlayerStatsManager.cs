@@ -37,7 +37,7 @@ public class PlayerStatsManager : MonoBehaviour {
 
         if (collectedXP == 100) {
             playerLevel++;
-            collectedXP = 0;
+            collectedXP -= 100;
 
             EventManager.Instance.playerEvents.PlayerLevelChange(playerLevel);
         }
