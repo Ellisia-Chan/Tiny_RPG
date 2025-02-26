@@ -5,18 +5,18 @@ public class QuestInfoSO : ScriptableObject {
     [field: SerializeField] public string id { get; private set; }
 
     [Header("General")]
-    [SerializeField] private string displayName;
+    [SerializeField] public string displayName;
 
     [Header("Requirements")]
-    [SerializeField] private int levelRequirement;
-    [SerializeField] private QuestInfoSO[] questPrerequisites;
+    [SerializeField] public int levelRequirement;
+    [SerializeField] public QuestInfoSO[] questPrerequisites;
 
     [Header("Steps")]
-    [SerializeField] private GameObject[] questStepsPrefabs;
+    [SerializeField] public GameObject[] questStepsPrefabs;
 
     [Header("Rewards")]
-    [SerializeField] private int goldReward;
-    [SerializeField] private int expReward;
+    [SerializeField] public int goldReward;
+    [SerializeField] public int expReward;
 
     // Ensures the name of the scriptable object is the same as the id
     private void OnValidate() {
